@@ -1,19 +1,19 @@
 {
-  "name": "language-typescript",
-  "version": "0.1.0",
-  "description": "TypeScript language support in Atom",
+  "name": "language-typescript-react",
+  "version": "0.0.0",
+  "description": "TypeScriptReact (TSX) language support in Atom",
   "engines": {
     "atom": ">=1.19.1",
     "node": "*"
   },
-  "homepage": "https://atom.io/packages/language-typescript",
+  "homepage": "https://atom.io/packages/language-typescript-react",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/language-typescript.git"
+    "url": "https://github.com/deankevorkian/language-typescript-react.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/atom/language-typescript/issues"
+    "url": "https://github.com/deankevorkian/language-typescript-react/issues"
   },
   "devDependencies": {}
 }
