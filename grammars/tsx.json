@@ -3988,16 +3988,16 @@
       "match": "\\S+"
     },
     "jsx-tag-without-attributes-in-expression": {
-      "begin": "(?x)\n  (?<=[({\\[,?=>:*]|&&|\\|\\||\\?|\\Wreturn|^return|\\Wdefault|^)\\s*\n  (?=(<)\\s*((?:[a-z][a-z0-9]*|([_$a-zA-Z][-$\\w.]*))(?<!\\.|-))\\s*(>))",
-      "end": "(?!\\s*(<)\\s*((?:[a-z][a-z0-9]*|([_$a-zA-Z][-$\\w.]*))(?<!\\.|-))\\s*(>))",
+      "begin": "(?x)\n  (?<=[({\\[,?=>:*]|&&|\\|\\||\\?|\\Wreturn|^return|\\Wdefault|^)\\s*\n  (?=(<)\\s*((?:[a-z][a-z0-9]*|([_$a-zA-Z][-$\\w.]*))?(?<!\\.|-))\\s*(>))",
+      "end": "(?!\\s*(<)\\s*((?:[a-z][a-z0-9]*|([_$a-zA-Z][-$\\w.]*))?(?<!\\.|-))\\s*(>))",
       "patterns": [{
         "include": "#jsx-tag-without-attributes"
       }]
     },
     "jsx-tag-without-attributes": {
       "name": "meta.tag.without-attributes.tsx",
-      "begin": "(<)\\s*((?:[a-z][a-z0-9]*|([_$a-zA-Z][-$\\w.]*))(?<!\\.|-))\\s*(>)",
-      "end": "(</)\\s*((?:[a-z][a-z0-9]*|([_$a-zA-Z][-$\\w.]*))(?<!\\.|-))\\s*(>)",
+      "begin": "(<)\\s*((?:[a-z][a-z0-9]*|([_$a-zA-Z][-$\\w.]*))?(?<!\\.|-))\\s*(>)",
+      "end": "(</)\\s*((?:[a-z][a-z0-9]*|([_$a-zA-Z][-$\\w.]*))?(?<!\\.|-))\\s*(>)",
       "beginCaptures": {
         "1": {
           "name": "punctuation.definition.tag.begin.tsx"
